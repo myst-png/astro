@@ -1,0 +1,50 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Project 1 - Attendance System">
+	<main class="container mx-auto px-6 py-16 max-w-5xl text-white">
+		<section class="text-center my-16">
+			<h1 class="text-5xl font-bold mb-4">Attendance System</h1>
+			<p class="text-xl text-gray-300 mb-8">An advanced system developed to streamline attendance management.</p>
+			<img src="https://via.placeholder.com/800x400" alt="Attendance System Screenshot" class="my-8 mx-auto rounded-lg shadow-lg"/>
+		</section>
+
+		<section class="bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 p-8 rounded-lg shadow-md">
+			<h2 class="text-3xl font-semibold mb-6">Project Details</h2>
+			<p class="text-lg mb-6">This Attendance System efficiently tracks user attendance, leveraging secure data handling and a clean user interface.</p>
+			<ul class="space-y-4 text-lg">
+				<li><strong>Website:</strong> <a href="https://attendance.msos.site" class="text-blue-400 hover:underline">attendance.msos.site</a></li>
+				<li><strong>Framework:</strong> PHP Laravel</li>
+				<li><strong>Styling:</strong> Tailwind CSS</li>
+				<li><strong>Database:</strong> MySQL</li>
+			</ul>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	main {
+		width: 900px;
+		max-width: calc(100% - 2rem);
+	}
+	h1 {
+		font-size: 3.5rem;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+		background-image: linear-gradient(45deg, #f39c12, #f1c40f);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	h2 {
+		font-size: 2.5rem;
+		font-weight: 700;
+		margin-bottom: 0.75em;
+	}
+	.bg-gradient-to-r {
+		border-radius: 12px;
+		padding: 2rem;
+	}
+</style>

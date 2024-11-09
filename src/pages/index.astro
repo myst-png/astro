@@ -1,0 +1,47 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="My Web Developer Portfolio">
+	<main class="container mx-auto p-8 text-gray-100 max-w-6xl">
+		<section class="text-center my-16">
+			<img src="https://via.placeholder.com/150" alt="Profile Image" class="mx-auto rounded-full w-32 h-32 mb-4 shadow-lg"/>
+			<h1 class="text-5xl font-bold mb-2">Hello, I'm Keneth Bryan</h1>
+			<p class="text-xl text-gray-400">An Aspiring Web Developer</p>
+			<p class="mt-4 text-lg">Give me an EXP.</p>
+		</section>
+
+		<section class="mt-12">
+			<h2 class="text-3xl font-semibold text-center mb-8">Featured Projects</h2>
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+				<Card href="projects" title="Projects" body="An amazing project description."/>
+				<Card href="#" title="Get my Résumé" body="Another fantastic project description."/>
+				<Card href="#" title="Get in touch" body="A third project with some unique features."/>
+				
+			</div>
+		</section>
+
+		<section class="mt-12 text-center">
+			<h2 class="text-3xl font-semibold mb-4">Get in Touch</h2>
+			<p class="text-lg mb-6">Feel free to connect with me on social media or send me an email.</p>
+			<div class="space-x-4">
+				<a href="https://linkedin.com" class="text-blue-500 hover:underline">LinkedIn</a>
+				<a href="https://github.com" class="text-gray-500 hover:underline">GitHub</a>
+				<a href="mailto:youremail@example.com" class="text-yellow-500 hover:underline">Email</a>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	.astro-a {
+		position: absolute;
+		top: -32px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 220px;
+		height: auto;
+		z-index: -1;
+	}
+</style>
